@@ -10,7 +10,7 @@ Tableau Public link: [https://public.tableau.com/app/profile/sagi.sagi/viz/Stran
 
 ## DASHBOARD
 
-
+[View pdf files here](Dashboard)
 
 ## EXECUTION
 
