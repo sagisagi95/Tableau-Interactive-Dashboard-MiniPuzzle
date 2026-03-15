@@ -69,6 +69,7 @@ for smoother UX when clicking object → duplicate the sheet, the 2nd sheet has 
 - Dashboard only shows “not hidden” objects
 
 *important: **Filter “Show_Object”** should be **applied only in this worksheet**
+
 <img width="432" alt="image" src="https://github.com/sagisagi95/Tableau-Interactive-Dashboard-MiniPuzzle/blob/main/image/image%208.png" />
 
 4. Score / Counting found objects
@@ -140,6 +141,7 @@ Click object → Text input → Pair check (via Parameter) → Confirm all 12 tr
 
 → when user clicks 12 right objects / 12 right input (object name) changed in parameters ⇒ AllSolvedCount = TRUE
 → when user click “Confirm” button ⇒ **true win state: change Param_All_Solve → TRUE**
+
 <img width="432" alt="image" src="https://github.com/sagisagi95/Tableau-Interactive-Dashboard-MiniPuzzle/blob/main/image/image%2019.png" />
 
 5. Hidden message
