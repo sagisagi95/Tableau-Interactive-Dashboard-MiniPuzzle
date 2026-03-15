@@ -22,7 +22,7 @@ Tableau Public link: [https://public.tableau.com/app/profile/sagi.sagi/viz/Stran
 - Stranger Things font
 - Object → Custom shapes
 
-Create schema - mock dataset
+Create schema - mock dataset in [src](src)
 
 ## GATE 1 / DASHBOARD 1 – FIND HIDDEN OBJECTS
 
