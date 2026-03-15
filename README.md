@@ -16,8 +16,6 @@ Tableau Public link: [https://public.tableau.com/app/profile/sagi.sagi/viz/Stran
 
 ***Skills used: Set Action, Conditional calculated field, Parameter**
 
-[Detail execution in Notion here](https://www.notion.so/Stranger-Things-Mini-Puzzle-2a76780f5cc1816ebcd5ee58d7e1b41c?source=copy_link)
-
 ### **Assets / theme**
 
 - 2 background images
