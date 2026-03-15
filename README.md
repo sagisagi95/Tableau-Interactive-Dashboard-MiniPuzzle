@@ -43,7 +43,10 @@ click object → mark found (simulated via set & action) → update score (by ca
 
 1. Assign custom shapes as demogorgons
 
+<img width="432" alt="image" src="https://github.com/sagisagi95/Tableau-Interactive-Dashboard-MiniPuzzle/blob/main/image/image%204.png" />
+
 - Drag object_id & object_name → **Marks - Detail & Shape**, define & adjust x_pos & y_pos to be aligned with the background
+<img width="432" alt="image" src="https://github.com/sagisagi95/Tableau-Interactive-Dashboard-MiniPuzzle/blob/main/image/image%205.png" />
 
 *note: 
 
@@ -54,8 +57,10 @@ for smoother UX when clicking object → duplicate the sheet, the 2nd sheet has 
 2. **Set Action:**
 - Create **2 empty Sets from the field: Object_id**: Set Selected_Object_R1 (record user clicks) and Set Found_Object_R1 (record true objects clicked)
 - In Dashboard, create an **Action - Change set values: Hunt Demo** - Run action on Select - Assign only latest value to Set Selected_Object_R1
-- Create another **Action - Change set values: Found Demo** - run Action on Select - Add all values to Set Found_Object_R1
+<img width="432" alt="image" src="https://github.com/sagisagi95/Tableau-Interactive-Dashboard-MiniPuzzle/blob/main/image/image%206.png" />
 
+- Create another **Action - Change set values: Found Demo** - run Action on Select - Add all values to Set Found_Object_R1
+<img width="432" alt="image" src="https://github.com/sagisagi95/Tableau-Interactive-Dashboard-MiniPuzzle/blob/main/image/image%207.png" />
 
 *important: Actions need to target the **right Source Sheets**!
 
@@ -64,18 +69,22 @@ for smoother UX when clicking object → duplicate the sheet, the 2nd sheet has 
 - Dashboard only shows “not hidden” objects
 
 *important: **Filter “Show_Object”** should be **applied only in this worksheet**
+<img width="432" alt="image" src="https://github.com/sagisagi95/Tableau-Interactive-Dashboard-MiniPuzzle/blob/main/image/image%208.png" />
 
 4. Score / Counting found objects
 - Create a calculated field named Found_Count → use **FIXED: COUNTD()** for cumulative count (not affected by filters) → drag into sheet Counter
+<img width="432" alt="image" src="https://github.com/sagisagi95/Tableau-Interactive-Dashboard-MiniPuzzle/blob/main/image/image%209.png" />
 
 5. Win condition
 - Create a calculated field named Is_Win_Room1 → set **win condition: Found_Count = 10** & **only show sheet Panel_R1 when Is_Win_Room1 = TRUE**
 - Panel_R1 and Portal sheets are created as Text / Shape
+<img width="432" alt="image" src="https://github.com/sagisagi95/Tableau-Interactive-Dashboard-MiniPuzzle/blob/main/image/image%2010.png" />
+<img width="432" alt="image" src="https://github.com/sagisagi95/Tableau-Interactive-Dashboard-MiniPuzzle/blob/main/image/image%2011.png" />
   
 6. Dashboard navigation
 - Create Action **GoToSheet** → Run action on Select sheet “Portal” / “Panel_R1” → users will be navigated to Dashboard “Gate 2”
 
-
+<img width="432" alt="image" src="https://github.com/sagisagi95/Tableau-Interactive-Dashboard-MiniPuzzle/blob/main/image/image%2012.png" />
 
 ## GATE 2 – PAIRING OBJECT + HIDDEN MESSAGE
 
@@ -102,20 +111,27 @@ Click object → Text input → Pair check (via Parameter) → Confirm all 12 tr
 
 1. Assign custom shapes as objects (12 sheets - 12 palettes with shapes)
 
+<img width="432" alt="image" src="https://github.com/sagisagi95/Tableau-Interactive-Dashboard-MiniPuzzle/blob/main/image/image%2013.png" />
+
 - Drag Object_id → Marks - Detail & Shape, define x_pos & y_pos by calculated field following **field “slot_position”**
+<img width="432" alt="image" src="https://github.com/sagisagi95/Tableau-Interactive-Dashboard-MiniPuzzle/blob/main/image/image%2014.png" />
 
 *note: set the position/coordinates for fixed object by [Object_role] = "base”, adjust object size by calculated field
 
 2. Text input field
 - Create 12 parameters corresponding to 12 pillars, type **STRING**
 - Create a sheet named **Input_Field** containing all 12 parameters + empty text → show corresponding Parameter to each pillar on Dashboard
+<img width="432" alt="image" src="https://github.com/sagisagi95/Tableau-Interactive-Dashboard-MiniPuzzle/blob/main/image/image%2015.png" />
 
 3. **Check True Pair - Set Action:**
 - Create 12 **Action - Change parameter: Pillar Check** - Run action on Select - Target each pillar’s parameter - **Source Field: Object name**
 
 → Text parameter would be automatically assigned value as corresponding object name
+<img width="432" alt="image" src="https://github.com/sagisagi95/Tableau-Interactive-Dashboard-MiniPuzzle/blob/main/image/image%2016.png" />
 
 - Create 2 calculated fields: **IsPillarSolved** to check if each answer / parameter is true & **AllSolvedCount** to check if users get all 12 right answers (parameter)
+<img width="432" alt="image" src="https://github.com/sagisagi95/Tableau-Interactive-Dashboard-MiniPuzzle/blob/main/image/image%2017.png" />
+<img width="432" alt="image" src="https://github.com/sagisagi95/Tableau-Interactive-Dashboard-MiniPuzzle/blob/main/image/image%2018.png" />
 
 4. Win condition
 - Create a parameter **Param_All_Solved** to check if all answers are right, set **initial value = FALSE**
@@ -124,14 +140,20 @@ Click object → Text input → Pair check (via Parameter) → Confirm all 12 tr
 
 → when user clicks 12 right objects / 12 right input (object name) changed in parameters ⇒ AllSolvedCount = TRUE
 → when user click “Confirm” button ⇒ **true win state: change Param_All_Solve → TRUE**
+<img width="432" alt="image" src="https://github.com/sagisagi95/Tableau-Interactive-Dashboard-MiniPuzzle/blob/main/image/image%2019.png" />
 
 5. Hidden message
 - Create 2 calculated fields with opposite conditions:
 - **Hide all objects** (all 12 sheets) after user reach “win state” → use it as **Filter** in object sheets and Input_Field 
 - **Show_Hidden_Message** when win condition is met → only use in sheet “Hidden message”
+<img width="432" alt="image" src="https://github.com/sagisagi95/Tableau-Interactive-Dashboard-MiniPuzzle/blob/main/image/image%2020.png" />
+<img width="432" alt="image" src="https://github.com/sagisagi95/Tableau-Interactive-Dashboard-MiniPuzzle/blob/main/image/image%2021.png" />
 
 - Trigger all parameters to disappear using **calculated field and Control visibility using value** of parameter “Show_Input_Control”
+<img width="432" alt="image" src="https://github.com/sagisagi95/Tableau-Interactive-Dashboard-MiniPuzzle/blob/main/image/image%2022.png" />
+<img width="432" alt="image" src="https://github.com/sagisagi95/Tableau-Interactive-Dashboard-MiniPuzzle/blob/main/image/image%2023.png" />
 
 - In sheet “Hidden message”, drag fields Letter_Order and Syllable (first-letter) → **Marks - Detail & Text,** define letters coordinates by calculated fields
+<img width="432" alt="image" src="https://github.com/sagisagi95/Tableau-Interactive-Dashboard-MiniPuzzle/blob/main/image/image%2024.png" />
 
 - Finally, “thank you” text only appears within Hidden message: use Text item in Dashboard & Control visibility using value of **Param_All_Solved**
