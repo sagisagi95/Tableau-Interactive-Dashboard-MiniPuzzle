@@ -1,26 +1,14 @@
 # Stranger Things Mini-Puzzle
 
-Skills used:: Game design, Visualization
-Tools: Tableau
-URL: https://public.tableau.com/app/profile/sagi.sagi/viz/StrangerThingsMiniPuzzlefinal/Room1
+Skills used: Game design, Visualization
 
-[public.tableau.com](https://public.tableau.com/app/profile/sagi.sagi/viz/StrangerThingsMiniPuzzlefinal/Room1)
+URL: [https://public.tableau.com/app/profile/sagi.sagi/viz/StrangerThingsMiniPuzzlefinal/Room1](https://public.tableau.com/app/profile/sagi.sagi/viz/StrangerThingsMiniPuzzlefinal/Room1)
 
-# PROJECT OVERVIEW
+## PROJECT OVERVIEW
 
 **Designed and built interactive dashboards simulating a hidden-object minipuzzle inspired by Stranger Things, using a non-game engine: Tableau Desktop**
 
-# RESULTS
-
-![image.png](Stranger%20Things%20Mini-Puzzle/image.png)
-
-![image.png](Stranger%20Things%20Mini-Puzzle/image%201.png)
-
-![image.png](Stranger%20Things%20Mini-Puzzle/image%202.png)
-
-![image.png](Stranger%20Things%20Mini-Puzzle/image%203.png)
-
-# EXECUTION
+## EXECUTION
 
 ***Skills used: Set Action, Conditional calculated field, Parameter**
 
@@ -163,7 +151,7 @@ Click object → Text input → Pair check (via Parameter) → Confirm all 12 tr
 ![image.png](Stranger%20Things%20Mini-Puzzle/image%2019.png)
 
 1. Hidden message
-- Create 2 calculated fields with opposite condition:
+- Create 2 calculated fields with opposite conditions:
 
       - **Hide all objects** (all 12 sheets) after user reach “win state” → use it as **Filter** in object sheets and Input_Field 
 
