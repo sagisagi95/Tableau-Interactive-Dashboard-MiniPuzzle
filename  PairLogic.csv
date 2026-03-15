@@ -1,0 +1,13 @@
+pillar_id,name,base_object_id,base_object,correct_object_id,correct_object,correct_answer,syllable,letter_order
+1,Debbie,101,Moon,102,Sun,Sun,S,1
+2,Mary,107,Orange,108,Apple,Apple,A,2
+3,Joshua,113,Drum,114,Guitar,Guitar,G,3
+4,Rebecca,119,Pen,120,Ink,Ink,I,4
+5,Wendy,125,Chocolate chips,126,Icecream,Icecream,I,5
+6,Thomas,131,Acorn,132,Squirrel,Squirrel,S,6
+7,Roger,137,Controller,138,Car,Car,C,7
+8,Derek,143,Coke,144,Hamburger,Hamburger,H,8
+9,Valerie,149,Elsa,150,Olaf,Olaf,O,9
+10,Glenn,155,Mouse,156,Snake,Snake,S,10
+11,Benji,161,Chicken,162,Egg,Egg,E,11
+12,Holly,167,Ring,168,Necklace,Necklace,N,12
